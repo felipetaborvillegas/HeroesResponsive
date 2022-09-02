@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    border: solid red 1px;
+}
+
+nav {
+    height: 38px;
+    background-color: #D1891C;   
+    font-size: 15px;
+    font-weight: 400px;
+    color: #000000;
+    padding: 10px 27px;
+}
+
+h1 {
+    background-color: #00669F;
+    height: 101px;
+    padding: 28px;
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    padding: 100px 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main section {
+    height: 645;
+    width: 300px;
+    margin: 20px;
+}
+
+.background-batman {
+    width: 300px;
+    height: 193px;
+    background-image: url('../img/background-batman.png');
+    position: relative;
+}
+
+.background-superman {
+    width: 300px;
+    height: 193px;
+    background-image: url('../img/supermanback.png');
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.background-mujermaravilla {
+    width: 300px;
+    height: 193px;
+    background-image: url('../img/mujermaravillaback.png');
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.background-harley {
+    width: 300px;
+    height: 193px;
+    background-image: url('../img/harleyback.png');
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content {
+    height: 400px;
+    width: 300px;
+    background-color: #F3F3F3;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.corazon {
+    position: absolute;
+    top: 15.88px;
+    left: 21px;
+}
+
+.hero {
+    position: absolute;
+    bottom: -30%;
+    left: 30%;
+    border-radius: 50%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+}
+
+.content h2 {
+    padding-top: 73px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    text-align: justify;
+    margin: 10px 17px 37px;
+}
+
+button {
+    width: 128.78px;
+    height: 48.52px;
+    background-color: #00669F;
+    position: absolute;
+    bottom: 18px;
+    margin: 18px auto;
+    left: 30%;
+    color: #F3F3F3;
+}
+
+footer {
+    background-color:#00669F ;
+    color: #F3F3F3;
+    height: 51px;
+    padding: 9px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    display: inline-block;
+}
+
+.git-hub {
+    width: 100px;
+    position: absolute;
+    right: 30px;
+}
