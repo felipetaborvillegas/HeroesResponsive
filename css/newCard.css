@@ -198,6 +198,9 @@ footer p {
   main .small-form .skills input, main .small-form .side input {
     margin-bottom: 10px;
   }
+  main .small-form .side {
+    margin-bottom: 30px;
+  }
   main .small-form .poderes, main .small-form .personaje {
     margin-bottom: 20px;
   }
