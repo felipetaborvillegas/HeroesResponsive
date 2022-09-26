@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto.zip");
+}
+
+@import "variables.scss";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+header {
+    .top-section{
+        height: 23px;
+        background-color: $verte-marino;
+        padding: 3px 20px;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .middle-section{
+        height: 81px;
+        background-color: $azul;
+        display: flex;
+        align-items: center;
+        img{
+            height: 74px;
+            width: 99px;
+        }
+        p{
+            font-size: 30px;
+            color: $blanco;
+            margin-left: 20px;
+        }
+    }
+    nav{
+        height: 40px;
+        background-color: $dark-blue;
+        color: $blanco;
+        position: relative;
+        ul{
+            display: flex;
+            list-style: none;
+            position: absolute;
+            right: 0px;   
+            margin: 10px 20px;
+            li{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+main{
+    margin: 40px auto;
+    width: 60vw;
+    color: $blanco;
+    background-color: $azul;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .subtitle{
+        margin: 10px 0px 40px 0px;
+        font-size: $font-estandar;
+    }
+    form{
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 87px;
+        gap: 25px;
+        font-size: $font-estandar;
+        .columna-uno{
+            text-align: left;
+            @include data;
+            @include place-holders;
+            textarea{
+                height: 343px;
+                border-radius: 20px;
+                width: 100%;
+                resize: none;
+                padding-top: 20px;
+            }
+        }
+        .columna-dos{
+            text-align: left;
+            @include data;
+            @include place-holders;
+            #foto::-webkit-file-upload-button{
+                border-radius: 0px;
+                margin-top: 15px;
+                height: 32px;
+                width: 60%;
+                color: black;
+            }
+            .poderes, .personaje {
+                margin-bottom: 15px;
+            }
+            .square{
+                width: 24px;
+                height: 20px;
+                margin: 8px 10px 8px 0px;
+            }
+        }
+        .add{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin: auto;
+            width: 60%;
+            height: 87px;
+            border-radius: 15px;
+            font-size: 40px;
+            font-weight: 700;
+            background-color: $verte-marino;
+        }
+    }
+    .small-form{
+        display: none;
+    }
+}
+
+footer{
+    background-color: $azul;
+    height: 61px;
+    padding-top: 22px;
+    p{
+        color: $blanco;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1180px) {
+    header{
+        .top-section{
+            p{
+                text-align: center;
+            }
+        }
+        .middle-section{
+            justify-content: center;
+        }
+        nav{
+            position: static;
+            padding: 2px;
+            ul{
+                position: static;
+                justify-content: center;
+            }
+        }
+    }
+    main{
+        width: 80vw;
+        .big-form{
+            display: none;
+        }
+        .small-form{
+            display: block;
+            .text, select{
+                margin-bottom: $font-estandar;
+                width: 50vw;
+            }
+            .input-foto{
+                margin-top: $font-estandar;
+            }
+            .descripcion{
+                margin-top: 20px;
+                width: 50vw;
+                height: 200px;
+                resize: none;
+                margin-bottom: 15px;
+            }
+            .skills, .side{
+                text-align: left;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .poderes, .personaje{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+

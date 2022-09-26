@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto.zip");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+header .top-section {
+  height: 23px;
+  background-color: #1CD1B0;
+  padding: 3px 20px;
+}
+header .top-section p {
+  font-size: 1rem;
+}
+header .middle-section {
+  height: 81px;
+  background-color: #00669F;
+  display: flex;
+  align-items: center;
+}
+header .middle-section img {
+  height: 74px;
+  width: 99px;
+}
+header .middle-section p {
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+header nav {
+  height: 40px;
+  background-color: #001D2D;
+  color: #FFFFFF;
+  position: relative;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  margin: 10px 20px;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+
+main {
+  margin: 40px auto;
+  width: 60vw;
+  color: #FFFFFF;
+  background-color: #00669F;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+}
+main h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+main .subtitle {
+  margin: 10px 0px 40px 0px;
+  font-size: 20px;
+}
+main form {
+  width: 65%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 87px;
+  gap: 25px;
+  font-size: 20px;
+}
+main form .columna-uno {
+  text-align: left;
+}
+main form .columna-uno .text, main form .columna-uno select {
+  height: 63px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px 0px;
+  padding-right: 20px;
+}
+main form .columna-uno #especie, main form .columna-uno #date, main form .columna-uno textarea {
+  padding-left: 20px;
+  font-size: 20px;
+}
+main form .columna-uno textarea {
+  height: 343px;
+  border-radius: 20px;
+  width: 100%;
+  resize: none;
+  padding-top: 20px;
+}
+main form .columna-dos {
+  text-align: left;
+}
+main form .columna-dos .text, main form .columna-dos select {
+  height: 63px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px 0px;
+  padding-right: 20px;
+}
+main form .columna-dos #especie, main form .columna-dos #date, main form .columna-dos textarea {
+  padding-left: 20px;
+  font-size: 20px;
+}
+main form .columna-dos #foto::-webkit-file-upload-button {
+  border-radius: 0px;
+  margin-top: 15px;
+  height: 32px;
+  width: 60%;
+  color: black;
+}
+main form .columna-dos .poderes, main form .columna-dos .personaje {
+  margin-bottom: 15px;
+}
+main form .columna-dos .square {
+  width: 24px;
+  height: 20px;
+  margin: 8px 10px 8px 0px;
+}
+main form .add {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: auto;
+  width: 60%;
+  height: 87px;
+  border-radius: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #1CD1B0;
+}
+main .small-form {
+  display: none;
+}
+
+footer {
+  background-color: #00669F;
+  height: 61px;
+  padding-top: 22px;
+}
+footer p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@media (max-width: 1180px) {
+  header .top-section p {
+    text-align: center;
+  }
+  header .middle-section {
+    justify-content: center;
+  }
+  header nav {
+    position: static;
+    padding: 2px;
+  }
+  header nav ul {
+    position: static;
+    justify-content: center;
+  }
+  main {
+    width: 80vw;
+  }
+  main .big-form {
+    display: none;
+  }
+  main .small-form {
+    display: block;
+  }
+  main .small-form .text, main .small-form select {
+    margin-bottom: 20px;
+    width: 50vw;
+  }
+  main .small-form .input-foto {
+    margin-top: 20px;
+  }
+  main .small-form .descripcion {
+    margin-top: 20px;
+    width: 50vw;
+    height: 200px;
+    resize: none;
+    margin-bottom: 15px;
+  }
+  main .small-form .skills, main .small-form .side {
+    text-align: left;
+  }
+  main .small-form .skills input, main .small-form .side input {
+    margin-bottom: 10px;
+  }
+  main .small-form .poderes, main .small-form .personaje {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=newCard.css.map */

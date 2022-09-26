@@ -1,0 +1,22 @@
+$verte-marino: #1CD1B0;
+$azul: #00669F;
+$dark-blue:#001D2D;
+$blanco: #FFFFFF;
+$font-estandar: 20px;
+
+@mixin data {
+    .text, select {
+        height: 63px;
+        width: 100%;
+        border-radius: 20px;
+        margin: 20px 0px;
+        padding-right: 20px;
+    }
+}
+
+@mixin place-holders {
+    #especie, #date, textarea{
+        padding-left: 20px;
+        font-size: $font-estandar;
+    }
+}

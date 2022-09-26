@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/newCard.css">
+    <title>Create a new card</title>
+</head>
+<body>
+    <header>
+        <section class="top-section">
+            <p>
+                20% de descuento en todos los productos!
+            </p>
+        </section>
+        <section class="middle-section">
+            <img src="../img/logo-create-card.png" alt="store">
+            <p>Nombre Tienda</p>
+        </section>
+        <nav>
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Añadí tu super!</h1>
+        <p class="subtitle">Agregá tu personaje favorito completando las opciones.</p>
+        <form method="POST" action="" class="big-form">
+            <div class="columna-uno">
+                <label for="nombre">*Nombre</label> <br>
+                <input 
+                id="nombre" 
+                name="nombre"   
+                type="text"
+                class="text"
+                />
+                <label for="date">Fecha</label> <br>
+                <input 
+                id="date" 
+                name="date"   
+                type="date"
+                class="text"/>
+                <textarea 
+                name="comentarios"
+                placeholder="Descripcion">
+                </textarea>
+            </div>
+            <div class="columna-dos">
+                <label for="especie">*Especie</label> <br>
+                <select
+                id="especie" 
+                name="Especie"   
+                type="select" 
+                placeholder="Especie">
+                </select> 
+                <label for="foto">Agregar Foto</label> <br>
+                <input 
+                id="foto" 
+                name="foto"   
+                type="file"
+                class="text"/>
+                <p class="subtitle poderes">Poderes</p>
+                <input 
+                id="volar" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="volar">Volar</label> <br>
+                <input 
+                id="super-inteligencia" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="super-inteligencia">
+                    Super inteligencia
+                </label> <br>
+                <input 
+                id="vista" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="vista">Vista de rayo láser</label> <br>
+                <input 
+                id="billetera" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="billetera">Billetera gorda</label> 
+                <br>
+                <br>
+                <hr/>
+                <p class="subtitle personaje">Tipo de personaje</p>
+                <input 
+                id="gender" 
+                name="gender"   
+                type="radio"
+                class="square"/>
+                <label for="gender">Héroe / Heroina</label> <br>
+                <input 
+                id="villano" 
+                name="gender"   
+                type="radio"
+                class="square"/>
+                <label for="villano">villano / villana</label> 
+            </div>
+            <button class="add">
+                Añadir
+            </button>
+        </form>
+        <form method="POST" action="" class="small-form">
+            <label for="nombre" class="name">*Nombre</label> <br>
+            <input 
+            id="nombre" 
+            name="nombre"   
+            type="text"
+            class="text"
+            /><br>
+            <label for="especie">*Especie</label> <br>
+            <select
+            id="especie" 
+            name="Especie"   
+            type="select" 
+            placeholder="Especie">
+            </select> <br>
+            <label for="date">Fecha</label> <br>
+            <input 
+            id="date" 
+            name="date"   
+            type="date"
+            class="text"/> <br>
+            <label for="foto" class="foto">Agregar Foto</label> <br>
+            <input 
+            id="foto" 
+            name="foto"   
+            type="file"
+            class="text input-foto"/> <br>
+            <textarea 
+            name="comentarios"
+            placeholder="Descripcion"
+            class="descripcion">
+            </textarea> <br>
+            <p class="subtitle poderes">Poderes</p>
+            <div class="skills">
+                <input 
+                id="volar" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="volar">Volar</label> <br>
+                <input 
+                id="super-inteligencia" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="super-inteligencia">
+                    Super inteligencia
+                </label> <br>
+                <input 
+                id="vista" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="vista">Vista de rayo láser</label> <br>
+                <input 
+                id="billetera" 
+                name="poderes"   
+                type="checkbox"
+                class="square"/>
+                <label for="billetera">Billetera gorda</label> 
+            </div>
+            <br>
+            <hr/>
+            <p class="subtitle personaje">Tipo de personaje</p>
+            <div class="side">
+                <input 
+                id="gender" 
+                name="gender"   
+                type="radio"
+                class="square"/>
+                <label for="gender">Héroe / Heroina</label> <br>
+                <input 
+                id="villano" 
+                name="gender"   
+                type="radio"
+                class="square"/>
+                <label for="villano">villano / villana</label>
+            </div> 
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
